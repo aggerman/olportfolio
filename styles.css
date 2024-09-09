@@ -131,7 +131,7 @@ nav img:hover {
 
 .home::before {
     content: "";
-    background-image: url(/olportfolio/pfimages/notebook\ bg.png);
+    background-image: url(pfimages/notebook\ bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -380,7 +380,7 @@ nav img:hover {
     width: 205px;
     border: 10px solid #a39587;
     border-radius: 20%;
-    background-image: url(/olportfolio/pfimages/VI-Logo.png);
+    background-image: url(pfimages/VI-Logo.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -423,15 +423,15 @@ nav img:hover {
 }
 
 .email-img {
-    background-image: url(/olportfolio/pfimages/email.png);
+    background-image: url(pfimages/email.png);
 }
 
 .phone-img {
-    background-image: url(/olportfolio/pfimages/telephone-call.png);
+    background-image: url(pfimages/telephone-call.png);
 }
 
 .msgr-img {
-    background-image: url(/olportfolio/pfimages/messenger.png);
+    background-image: url(pfimages/messenger.png);
 }
 
 .contact-info .icons{
