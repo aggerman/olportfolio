@@ -1,0 +1,1086 @@
+html, body { 
+    margin: unset;
+    padding: unset;
+    width: 100vw;
+    background-color: #cac4bf;
+}
+
+/* FONTS */
+h1 {
+    font-family: 'Dream Avenue', 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 600%;
+    font-weight: 100;
+}
+
+.home-subtitle, p, ul, footer, .fb-txt, .mobile-sidebar-nav {
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: "Alice", serif;
+    text-transform: uppercase;
+}
+
+/* COMMON STYLING */
+main {
+    margin-left: 80px;
+}
+
+.education, .achievements, .skills, .projects, .contact {
+    min-height: 90vh;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 80px;
+}
+
+hr {
+    border: 0;
+    clear: both;
+    display:block;
+    background-color:#808080;
+    height: 1.5px;
+}
+
+/* invisible section gap to compensate for header when using downbtn */
+.inbetween-section {
+    height: 80px;
+}
+
+/* header */
+.portfolio-header {
+    background: #d5cec7;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 98;
+}
+
+.siteheader-name {
+    margin: 0;
+    color: #000;
+    font-size: 250%;
+}
+
+/* mobile-only elements */
+.mobile-sidebar-nav {
+    display: none;
+}
+
+.portfolio-header span {
+    display: none;
+}
+
+.mobilev-contact {
+    display: none;
+}
+
+/* SIDEBAR-NAV */
+.sidebar-nav {
+    width: 80px;
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    z-index: 1;
+    padding: 20vh 0;
+    height: 100%;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    position: relative; 
+    display: inline-block; 
+}
+
+nav img {
+    width: 30px;
+    opacity: 0.5;
+    padding: 0 20px;
+    margin: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav img:hover {
+    opacity: 1.0;
+    padding: 0 15px;
+    width: 40px;
+}
+
+
+/* HOME */
+.home {
+    min-height: 90vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 80px;
+}
+
+.home::before {
+    content: "";
+    background-image: url(/pfimages/notebook\ bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.home-content .home-subtitle {
+    margin: 0;
+    font-size: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.home-content h1 {
+    margin: 0 20px;
+    line-height: 80%;
+}
+
+.home .downbtn img { 
+    position: relative;
+    bottom: -25vh;
+}
+
+/* ABOUT */
+.about {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content {
+    margin-top: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content .left-about {
+    width: 50%;
+    margin: 0 30px 0 7%;
+}
+
+.section-titleimage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-titleimage h1 {
+    line-height: 110px;
+    margin: unset;
+}
+
+.about-content .left-about h2 {
+    font-size: 300%;
+    line-height: 100%;
+    margin: 40px 0 10px 0;
+    font-weight: 100;
+}
+
+.about-content .left-about .main-info {
+    margin: 0 5px 0 20px;
+}
+
+.about-content .left-about img {
+    height: 63px;
+    margin-right: 25px;
+    margin-bottom: 7px;
+}
+
+.main-info p {
+    margin: 0;
+    padding-right: 10px;
+    font-size: 105%;
+}
+
+.about-content .right-about {
+    width: 50%;
+    margin: 100px 40px 0 30px;
+}
+
+.about-content .right-about h2 {
+    font-size: 200%;
+    font-weight: 200;
+    margin: 0;
+}
+
+.about-content .right-about p, .about-content .right-about ul {
+    margin: 0 0 0 25px;
+    font-size: 105%;
+}
+
+.about-content .right-about ul {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.about .downbtn {
+    margin-right: 40px;
+}
+
+/* positioning of down button in ABOUT */
+.about .downbtn img { 
+    position: relative;
+    bottom: -3vh;
+}
+
+/* EDUCATION */
+.education {
+    margin-top: 18vh;
+}
+
+.education hr {
+    width: 705px;
+}
+
+.education h1 {
+    font-size: 110px;
+}
+
+.education .section-titleimage img {
+    height: 75px;
+    line-height: 110px;
+    padding-bottom: 10px;
+    margin: 0 20px 0 0;
+}
+
+.education p {
+    margin: 0;
+    text-align: center;
+}
+
+.education .degree {
+    font-style: italic;
+}
+
+.educ h2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.education .downbtn img {
+    position: relative;
+    bottom: -9vh;
+}
+
+.educ h2, .achievements h2 {
+    text-align: center;
+}
+
+
+/* ACHIEVEMENTS */
+.achievements {
+    margin-top: 18vh;
+}
+
+.achievements hr {
+    width: 800px;
+}
+
+.achievements .section-titleimage img {
+    height: 67px;
+    line-height: 110px;
+    padding-bottom: 10px;
+    margin: unset;
+}
+
+.achievements p {
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+}
+
+.achievements h2 {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.achievements .downbtn img {
+    position: relative;
+    bottom: -15vh;
+}
+
+/* SKILLS */
+.skills {
+    margin-top: 18vh;
+}
+
+.skills hr {
+    width: 450px;
+}
+
+.skills h1 {
+    font-size: 110px;
+}
+
+.skills .section-titleimage img {
+    height: 75px;
+    line-height: 110px;
+    padding-bottom: 10px;
+    margin: 0 20px 0 0;
+}
+
+.skill-icons img {
+    width: 100px;
+    margin: 40px 20px 0 20px;
+}
+
+/* positioning of down button in SKILLS */
+.skills .downbtn img { 
+    position: relative;
+    bottom: -14vh;
+}
+
+/* PROJECTS */
+.projects {
+    margin-top: 18vh;
+}
+
+.projects hr {
+    width: 640px;
+}
+
+.projects h1 {
+    font-size: 110px;
+}
+
+.projects .section-titleimage img {
+    height: 75px;
+    line-height: 110px;
+    padding-bottom: 10px;
+    margin: 0 20px 0 0;
+}
+
+.projects .proj {
+    margin-top: 20px;
+    height: 205px;
+    width: 205px;
+    border: 10px solid #a39587;
+    border-radius: 20%;
+    background-image: url(/pfimages/VI-Logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* positioning of down button in SKILLS */
+.projects .downbtn img { 
+    position: relative;
+    bottom: -8vh;
+}
+
+/* CONTACT */
+.contact {
+    margin-top: 18vh;
+}
+
+.contact hr {
+    width: 640px;
+}
+
+.contact h1 {
+    font-size: 110px;
+}
+
+.contact .section-titleimage img {
+    height: 100px;
+    line-height: 110px;
+    padding-bottom: 10px;
+    margin: 0 15px 0 0;
+}
+
+.email-img, .phone-img, .msgr-img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #000;
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: 0 30px;
+}
+
+.email-img {
+    background-image: url(/pfimages/email.png);
+}
+
+.phone-img {
+    background-image: url(/pfimages/telephone-call.png);
+}
+
+.msgr-img {
+    background-image: url(/pfimages/messenger.png);
+}
+
+.contact-info .icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-info .text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-txt, .phone-txt, .fb-txt {
+    margin: 0 30px;
+    text-align: center;
+}
+
+/* arrow up from bottom of page @ contact section */
+.upbtn img {
+    width: 80px;
+    height: 60px;
+    rotate: 180deg;
+    position: relative;
+    bottom: -8vh;
+}
+
+.link-to-top a {
+    color: #000;
+    position: relative;
+    bottom: -4.5vh;
+}
+
+.fb-txt {
+    color: #000;
+}
+
+.link-to-top a:link, .fb-txt:link { text-decoration: none; }
+.link-to-top a:visited, .fb-txt:visited { text-decoration: none; }
+.link-to-top a:hover, .fb-txt:hover { text-decoration: none; }
+.link-to-top a:active, .fb-txt:active { text-decoration: none; }
+
+/* down button */
+.downbtn img {
+    width: 80px;
+    height: 60px;
+    transition: all 0.2s ease-in-out;
+}
+
+.downbtn img:hover, .upbtn img:hover {
+    filter: brightness(50%);
+}
+
+.downbtn img:active {
+    width: 75px;
+    height: 56px;
+}
+
+footer {
+    text-align: center;
+    border-top: 1.5px solid #808080;
+    z-index: 97;
+    padding: 20px 0 50px 0;
+    margin-right: 80px;
+}
+
+/* TABLET VIEW */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    main {
+        margin-left: 100px;
+    }
+
+    h1 {
+        font-size: 700%;
+    }
+
+    .inbetween-section {
+        height: 50px;
+    }    
+
+    /* header */
+    .portfolio-header {
+        height: 90px;
+    }
+
+    .siteheader-name {
+        margin: 0;
+        color: #000;
+        font-size: 330%;
+    }
+
+    /* SIDEBAR-NAV */
+    .sidebar-nav {
+        width: 100px;
+        top: 50px;
+    }
+    
+    nav img {
+        width: 35px;
+        padding: 5px;
+    }
+    
+    nav img:hover, nav img:active {
+        opacity: 1.0;
+        padding: 8px;
+        width: 35px;
+    }
+
+    /* HOME */
+    .home {
+        padding-right: 100px;
+    }
+
+    .home .downbtn img { 
+        position: relative;
+        bottom: -15vh;
+    }
+
+    /* ABOUT */
+    .about h1 {
+        font-size: 490%;
+    }
+
+    .about-content .left-about img {
+        height: 55px;
+        margin-right: 10px;
+        margin-bottom: 7px;
+    }
+
+    .about-content .left-about {
+        width: 50%;
+        margin: 0 30px 0 20PX;
+    }
+
+    .about-content .left-about h2 {
+        font-size: 240%;
+    }
+
+    .left-about p, .about-content .right-about p, .about-content .right-about ul {
+        margin: 0 0 0 25px;
+        font-size: 100%;
+    }
+
+    .about-content .right-about {
+        margin: 150px 90px 0 20px;
+    }
+
+    .about .downbtn img { 
+        position: relative;
+        bottom: -5vh;
+    }
+    
+    /* EDUCATION */
+    .education hr {
+        width: 540px;
+    }
+
+    .education h1 {
+        font-size: 490%;
+    }
+
+    .education .section-titleimage img {
+        height: 60px;
+    }
+
+    .educ h2, .achievements h2 {
+        font-size: 130%;
+    }
+
+    .educ p, .achievements p {
+        font-size: 95%;
+        line-height: 20px;
+    }
+
+    /* ACHIEVEMENTS */
+    .achievements {
+        margin-top: 18vh;
+    }
+
+    .achievements hr {
+        width: 540px;
+    }
+
+    .achievements h1 {
+        font-size: 400%;
+    }
+
+    /* SKILLS */
+
+    .skills hr {
+        width: 350px;
+    }
+
+    .skills h1 {
+        font-size: 500%;
+        line-height: 90px;
+    }
+
+    .skills .section-titleimage img {
+        height: 65px;
+        margin: 0 10px 0 0;
+    }
+
+    .skill-icons img {
+        width: 80px;
+        margin: 40px 10px 0 10px;
+    }
+
+    /* PROJECTS */
+    .projects hr {
+        width: 480px;
+    }
+
+    .projects h1 {
+        font-size: 490%;
+    }
+
+    .projects .section-titleimage img {
+        height: 65px;
+        line-height: 110px;
+        padding-bottom: 10px;
+        margin: 0 15px 0 0;
+    }
+
+    /* CONTACT */
+    .contact hr {
+        width: 470px;
+    }
+    
+    .contact h1 {
+        font-size: 490%;
+    }
+    
+    .contact .section-titleimage img {
+        height: 80px;
+        margin: 0 5px 0 0;
+    }
+
+    .email-img, .phone-img, .msgr-img {
+        width: 100px;
+        height: 100px;
+        background-size: 50px;
+        margin: 0 36px;
+    }
+
+    .email-txt, .phone-txt, .fb-txt {
+        margin: 0 14px;
+        text-align: center;
+    }
+
+    .contact .text {
+        margin: 10px 15px;
+        align-items: flex-start;
+    }
+    
+    .link-to-top a {
+        bottom: -40px;
+    }
+
+}
+
+/* MOBILE VIEW */
+/* Note: Lighthouse on Google Chrome seems to use a smaller min-width (around 360px or 390px) when checking for mobile */
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    /* mobile-only elements */
+    body{
+        transition: background-color .5s;
+    }
+
+    .sidebar-nav {
+        display: none;
+    }
+
+    .mobile-sidebar-nav {
+        display: initial;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 98;
+        top: 70px;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .mobile-sidebar-nav img {
+        width: 30px;
+        filter: invert(0.5);
+    }
+
+    .mobile-sidebar-nav img:hover, .mobile-sidebar-nav img:active {
+        width: 30px;
+        filter: invert(1);
+    }
+    
+    .mobile-sidebar-nav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 120%;
+        color: #d5cec7;
+        display: block;
+        transition: 0.3s;
+    }
+      
+    .mobile-sidebar-nav a:hover {
+        color: #f1f1f1;
+    }
+      
+    .mobile-sidebar-nav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    } 
+
+    /* usual elements start here */
+    main {
+        margin: 0 50px;
+    }
+
+    .inbetween-section {
+        height: 50px;
+    }
+
+    .about .downbtn, .education .downbtn {
+        margin: unset;
+    }
+
+    .education, .achievements, .skills, .projects, .contact {
+        padding-right: unset;
+    }
+
+    footer {
+        margin: unset;
+    }
+
+    /* header */
+    .portfolio-header {
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        height: 70px;
+    }
+    
+    .portfolio-header h1 {
+        font-size: 200%;
+        font-weight: 500;
+        margin-top: 9px;
+        margin-right: 40px;
+    }
+
+    .portfolio-header span {
+        display: initial;
+        font-size: 170%;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+
+    /* SIDEBAR-NAV */
+    .sidebar-nav {
+        width: 100px;
+        top: 50px;
+    }
+    
+    nav img {
+        width: 35px;
+        padding: 5px;
+    }
+    
+    nav img:hover, nav img:active {
+        opacity: 1.0;
+        padding: 8px;
+        width: 35px;
+    }
+
+    /* HOME */
+    .home {
+        padding: 50px 0 0 0;
+    }
+
+    .home-content h1 {
+        font-size: 380%;
+    }
+
+    .home-content .home-subtitle {
+        font-size: 80%;
+    }
+
+    .home .downbtn img { 
+        position: relative;
+        bottom: -20vh;
+    }
+
+    /* ABOUT */
+    .about {
+        margin-top: 0;
+    }
+
+    .about hr {
+        width: 270px;
+    }
+    
+    .about-content {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-content .section-titleimage {
+        justify-content: center;
+    }
+
+    .about h1 {
+        font-size: 350%;
+        line-height: unset;
+        line-height: 5px;
+    }
+
+    .about-content .left-about img {
+        height: 40px;
+        margin-right: 10px;
+        margin-bottom: 7px;
+    }
+
+    .about-content .left-about {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about-content .left-about h2, .right-about h2 {
+        font-size: 230%;
+        margin: unset;
+        margin: 15px 0 5px 0;
+        text-align: center;
+    }
+
+    .left-about .main-info p {
+        margin: unset;
+        padding: unset;
+        margin: 9px;
+    }
+
+    .left-about p, .about-content .right-about p, .about-content .right-about ul {
+        margin: unset;
+        font-size: 90%;
+        margin: 0 15px 0 27px;
+    }
+
+    .about-content .right-about {
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .downbtn {
+        margin: unset;
+    }
+
+    .about .downbtn img { 
+        position: relative;
+        bottom: -3vh;
+    }
+    
+    /* EDUCATION */
+    .education {
+        margin-top: 20vh;
+    }
+
+    .education hr {
+        width: 350px;
+    }
+
+    .education h1 {
+        font-size: 330%;
+        line-height: 20px;
+    }
+
+    .education .section-titleimage img {
+        height: 45px;
+        margin: 0 10px;
+    }
+
+    .educ h2, .achievements h2 {
+        font-size: 120%;
+        line-height: 20px;
+        padding-bottom: 5px;
+    }
+
+    .educ p, .achievements p {
+        font-size: 80%;
+        line-height: 15px;
+    }
+
+    /* ACHIEVEMENTS */
+    .achievements {
+        margin-top: 20vh;
+    }
+
+    .achievements hr {
+        width: 350px;
+    }
+
+    .achievements h1 {
+        font-size: 270%;
+        line-height: 20px;
+    }
+
+    .achievements .section-titleimage img {
+        height: 40px;
+        margin: 0 5px;
+    }
+
+    .achievements .downbtn img {
+        position: relative;
+        bottom: -9vh;
+    }
+
+    /* SKILLS */
+    .skills {
+        margin-top: 20vh;
+    }
+
+    .skills hr {
+        width: 300px;
+    }
+
+    .skills h1 {
+        font-size: 400%;
+        line-height: 70px;
+    }
+
+    .skills .section-titleimage img {
+        height: 50px;
+        margin: 0 10px 0 0;
+    }
+
+    .skill-icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skill-icons img {
+        width: 75px;
+        margin: 20px 10px 0 10px;
+    }
+
+    .skills .downbtn img {
+        position: relative;
+        bottom: -9vh;
+    }
+
+    /* PROJECTS */
+    .projects {
+        margin-top: 18vh;
+    }
+    
+    .projects hr {
+        width: 330px;
+    }
+
+    .projects h1 {
+        font-size: 330%;
+        line-height: 50px;
+    }
+
+    .projects .section-titleimage img {
+        height: 50px;
+        line-height: 110px;
+        padding-bottom: 10px;
+        margin: 0 10px 0 0;
+    }
+
+    /* CONTACT */
+    .mobilev-contact {
+        display: initial;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact {
+        margin-top: 10vh;
+    }
+
+    .contact hr {
+        width: 330px;
+        margin-bottom: 20px;
+    }
+    
+    .contact h1 {
+        font-size: 340%;
+        line-height: 60px;
+    }
+    
+    .contact .section-titleimage img {
+        height: 50px;
+        margin: 10px 0 0 0;
+    }
+
+    .desktop-tabletv-contact {
+        display: none;
+    }
+
+    .email-img, .phone-img, .msgr-img {
+        width: 80px;
+        height: 80px;
+        background-size: 40px;
+        margin: 0 36px;
+        border: 2px solid #000;
+    }
+
+    .email-mv, .phone-mv, .fbmsgr-mv {
+        padding: 10px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .email-txt, .phone-txt, .fb-txt {
+        margin: 0 14px;
+        font-size: 95%;
+        text-align: left;
+    }
+
+    .upbtn img {
+        width: 80px;
+        height: 60px;
+        rotate: 180deg;
+        position: relative;
+        bottom: -4vh;
+    }
+    
+    .link-to-top a {
+        position: relative;
+        bottom: -1vh;
+    }
+
+}
